@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ClickEvent : MonoBehaviour
 {
     public Data dataController;
+    public Upgrade UpUp;
     [SerializeField] public Slider slider;
   
     
@@ -14,23 +15,13 @@ public class ClickEvent : MonoBehaviour
         dataController.AddMoney(dataController.GetClickMoney());
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-       
-    }
     public void Button()
     {
         if(slider.value != 100)
         {
             slider.value += 2;
-        }
+      }
     }
     
 }
