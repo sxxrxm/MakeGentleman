@@ -356,6 +356,7 @@ GameObject:
   - component: {fileID: 912900574}
   - component: {fileID: 912900573}
   - component: {fileID: 912900572}
+  - component: {fileID: 912900575}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -444,6 +445,18 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &912900575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912900570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9076bbc0959c4eea96006022a458ae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &932350630
 GameObject:
   m_ObjectHideFlags: 0
