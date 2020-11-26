@@ -6,11 +6,12 @@ public class Data : MonoBehaviour
 {
     private int mMoney = 0;
     private int mClickMoney = 0;
+    private int sinsaTime = 0;
 
     void Awake() {
         mMoney = PlayerPrefs.GetInt("Money");
         mClickMoney = PlayerPrefs.GetInt("MoneyPerClick",5);
-
+        sinsaTime = PlayerPrefs.GetInt("SinsaTime", 3);
     }
     public void SetMoney(int newM){
         mMoney = newM;
