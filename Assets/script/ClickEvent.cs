@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ClickEvent : MonoBehaviour
 {
     public Data dataController;
+    public Upgrade UpUp;
     [SerializeField] public Slider slider;
     public float LimitTime;
     
@@ -23,14 +24,15 @@ public class ClickEvent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        LimitTime -= Time.deltaTime;
+        
     }
+
     public void Button()
     {
         if(slider.value != 100)
         {
             slider.value += 2;
-        }
+      }
     }
     
 }

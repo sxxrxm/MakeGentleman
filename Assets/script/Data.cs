@@ -6,7 +6,7 @@ public class Data : MonoBehaviour
 {
     private int mMoney = 0;
     private int mClickMoney = 0;
-    private int sinsaTime = 0;
+    private float sinsaTime = 2;
 
     void Awake() {
         mMoney = PlayerPrefs.GetInt("Money");
