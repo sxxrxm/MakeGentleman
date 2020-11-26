@@ -7,7 +7,7 @@ public class ClickEvent : MonoBehaviour
 {
     public Data dataController;
     [SerializeField] public Slider slider;
-    public float LimitTime;
+  
     
     public void OnClick()
     {
@@ -23,7 +23,7 @@ public class ClickEvent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        LimitTime -= Time.deltaTime;
+       
     }
     public void Button()
     {

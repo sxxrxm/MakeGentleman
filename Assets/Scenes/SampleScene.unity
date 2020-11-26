@@ -1334,13 +1334,6 @@ MonoBehaviour:
   upgradeDisplayer: {fileID: 1671355721}
   costDisplayer: {fileID: 1252711244}
   nowDisplayer: {fileID: 1893993481}
-<<<<<<< HEAD
-=======
-  upgradeName: 
-  startMoneyUpgrade: 0
-  moneyUpgrade: 3
-  upgradePow: 3
->>>>>>> 1c330984503f9d535e3a0c4911a88c96c87f751b
   level: 1
   sinsaTime: 1
   currentCost: 200
