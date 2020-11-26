@@ -1183,8 +1183,8 @@ MonoBehaviour:
   costDisplayer: {fileID: 1252711244}
   nowDisplayer: {fileID: 1893993481}
   startMoneyUpgrade: 0
-  moneyUpgrade: 5
-  upgradePow: 1.07
+  moneyUpgrade: 3
+  upgradePow: 3
   level: 1
   currentCost: 200
   startCurrentCost: 200

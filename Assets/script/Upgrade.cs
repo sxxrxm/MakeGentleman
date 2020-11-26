@@ -12,9 +12,11 @@ public class Upgrade : MonoBehaviour
     public Text costDisplayer;
     public Text nowDisplayer; 
 
+    public string upgradeName;
     [HideInInspector]
     public int startMoneyUpgrade = 3;  //처음 터치당 비용 증가량
-    public int moneyUpgrade = 3; //한번 업그레이드 했을시 증가량
+    public int moneyUpgrade; //한번 업그레이드 했을시 증가량
+    
     public float upgradePow = 1.07f; //신사 터치당 비용 비율
 
     [HideInInspector]
@@ -28,9 +30,7 @@ public class Upgrade : MonoBehaviour
 
     void Start()
     {
-        currentCost = startCurrentCost;
-        level = 1;
-        moneyUpgrade = startMoneyUpgrade;
+        dataController.LoadUpgradeButton(this);
         updateUI();
     }
 
@@ -42,6 +42,8 @@ public class Upgrade : MonoBehaviour
 
             updateUpgrade(); 
             updateUI();
+
+            dataController.SaveUpgradeButton(this);
         }
     }
 
@@ -51,7 +53,7 @@ public class Upgrade : MonoBehaviour
     }
 
     public void updateUI() {
-        levelDisplayer.text = "Lv."+ startMoneyUpgrade * (int)Mathf.Pow(upgradePow, level);
+        levelDisplayer.text = "Lv."+ level;
         upgradeDisplayer.text = "터치당 "+moneyUpgrade+"코인\n신사타임 3초";
         costDisplayer.text = Convert.ToString(currentCost);
         nowDisplayer.text = "터치당 " + dataController.GetClickMoney()+"코인";
