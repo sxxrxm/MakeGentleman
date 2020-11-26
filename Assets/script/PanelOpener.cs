@@ -12,7 +12,11 @@ public class PanelOpener : MonoBehaviour
     public Sprite Im3;
     public Sprite Im4;
     public Sprite Im5;
-    public int count = 0;
+    public int count;
+
+    void OnMouseDownn(){
+        Debug.Log("버튼 눌림");
+    }
  
     public void ChangeImage()
     {
@@ -29,9 +33,10 @@ public class PanelOpener : MonoBehaviour
             TestIm0.sprite = Im4;
             count ++;
         }else if(count == 4){
-            count ++;
             TestIm0.sprite = Im5;
-        
+            count ++;
+        }else{
+            SceneManager.LoadScene(0, LoadSceneMode.Single);
         }
         
     }
