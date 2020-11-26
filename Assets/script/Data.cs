@@ -6,12 +6,10 @@ public class Data : MonoBehaviour
 {
     private int mMoney = 0;
     private int mClickMoney = 0;
-    private int sinsaTime = 0;
 
     void Awake() {
         mMoney = PlayerPrefs.GetInt("Money");
         mClickMoney = PlayerPrefs.GetInt("MoneyPerClick",5);
-        sinsaTime = PlayerPrefs.GetInt("SinsaTime", 3);
     }
     public void SetMoney(int newM){
         mMoney = newM;
@@ -37,13 +35,7 @@ public class Data : MonoBehaviour
 
     public void SetClickMoney(int newCM) {
         mClickMoney = newCM;
-        PlayerPrefs.GetInt("MoneyPerClick", mClickMoney);
-    }
-
-    public void AddClickMoney(int newCM)
-    {
-        mClickMoney += newCM;
-        SetClickMoney(mClickMoney);
+        PlayerPrefs.SetInt("MoneyPerClick", mClickMoney);
     }
 
     public int GetClickMoney()
@@ -51,16 +43,14 @@ public class Data : MonoBehaviour
         return mClickMoney;
     }
     public void SaveUpgradeButton(Upgrade upgradeButton){
-        string key = upgradeButton.upgradeName;
-        PlayerPrefs.SetInt(key+"_level",upgradeButton.level);
-        PlayerPrefs.SetInt(key+"_upgrade",upgradeButton.moneyUpgrade);
-        PlayerPrefs.SetInt(key+"_cost",upgradeButton.currentCost);
+        PlayerPrefs.SetInt("level ",upgradeButton.level);
+        PlayerPrefs.SetInt("time ",upgradeButton.sinsaTime);
+        PlayerPrefs.SetInt("cost ",upgradeButton.currentCost);
     }
     public void LoadUpgradeButton(Upgrade upgradeButton){
-        string key = upgradeButton.upgradeName;
-        upgradeButton.level = PlayerPrefs.GetInt(key+"_level",1);
-        upgradeButton.moneyUpgrade = PlayerPrefs.GetInt( key+"_upgrade",upgradeButton.startMoneyUpgrade);
-        upgradeButton.currentCost = PlayerPrefs.GetInt(key+"_cost",upgradeButton.startCurrentCost);
+        upgradeButton.level = PlayerPrefs.GetInt("level ",1);
+        upgradeButton.sinsaTime = PlayerPrefs.GetInt("time ",1);
+        upgradeButton.currentCost = PlayerPrefs.GetInt("cost ",upgradeButton.startCurrentCost);
     }
 
 }
