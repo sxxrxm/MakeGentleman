@@ -50,17 +50,17 @@ public class Data : MonoBehaviour
     {
         return mClickMoney;
     }
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    public void SaveUpgradeButton(Upgrade upgradeButton){
+        string key = upgradeButton.upgradeName;
+        PlayerPrefs.SetInt(key+"_level",upgradeButton.level);
+        PlayerPrefs.SetInt(key+"_upgrade",upgradeButton.moneyUpgrade);
+        PlayerPrefs.SetInt(key+"_cost",upgradeButton.currentCost);
+    }
+    public void LoadUpgradeButton(Upgrade upgradeButton){
+        string key = upgradeButton.upgradeName;
+        upgradeButton.level = PlayerPrefs.GetInt(key+"_level",1);
+        upgradeButton.moneyUpgrade = PlayerPrefs.GetInt( key+"_upgrade",upgradeButton.startMoneyUpgrade);
+        upgradeButton.currentCost = PlayerPrefs.GetInt(key+"_cost",upgradeButton.startCurrentCost);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
