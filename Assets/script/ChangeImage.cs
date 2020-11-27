@@ -7,7 +7,7 @@ public class ChangeImage : MonoBehaviour
 {
     public Text ttext;
     public Text itext;
-    public Text pttext;
+    public Text ptext;
     public Text htext;
 
     public Image TestIm0; //기존에 존제하는 이미지
@@ -34,22 +34,22 @@ public class ChangeImage : MonoBehaviour
     void Update()
     {
         
-        buyt = getbuyt();
-        buyi = getbuyi();
-        buyp = getbuyp();
-        buyh = getbuyh();
+        buyt = dataController.getbuyt();
+        buyi = dataController.getbuyi();
+        buyp = dataController.getbuyp();
+        buyh = dataController.getbuyh();
         
         if(dataController.GetMoney()>=prices[i]){
             TestIm0.sprite = Im1;
             if(buyt==1){
                 ttext.text = "보유 중";
-            }else if(buyio==1){
+            }else if(buyi==1){
                 itext.text = "보유 중";
             }else if(buyp==1){
                 ptext.text = "보유 중";
             }else if(buyh==1){
                 htext.text = "보유 중";
-            }
+            } 
         }
     }
     public void buyStore(){

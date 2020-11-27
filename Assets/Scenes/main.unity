@@ -453,6 +453,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63d4c0bff925b4f5fb8d1abec0aed007, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ttext: {fileID: 0}
+  itext: {fileID: 0}
+  ptext: {fileID: 0}
+  htext: {fileID: 0}
   TestIm0: {fileID: 68705571}
   Im1: {fileID: 21300000, guid: 6c3f5a15b132b44d8a1e6b0cb4ba23d7, type: 3}
   coin: {fileID: 0}
@@ -461,6 +465,10 @@ MonoBehaviour:
   prices: b0040000803e0000409c0000a0860100
   buy: 0
   fix: {fileID: 0}
+  buyt: 0
+  buyi: 0
+  buyp: 0
+  buyh: 0
 --- !u!114 &68705570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1423,14 +1431,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63d4c0bff925b4f5fb8d1abec0aed007, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ttext: {fileID: 728832442}
+  itext: {fileID: 559977952}
+  ptext: {fileID: 1310131026}
+  htext: {fileID: 1154506162}
   TestIm0: {fileID: 195690668}
   Im1: {fileID: 21300000, guid: 6c3f5a15b132b44d8a1e6b0cb4ba23d7, type: 3}
-  coin: {fileID: 0}
+  coin: {fileID: 462475675}
   dataController: {fileID: 1804656918}
   i: 1
   prices: 88130000983a0000409c0000a0860100
   buy: 0
   fix: {fileID: 559977952}
+  buyt: 0
+  buyi: 0
+  buyp: 0
+  buyh: 0
 --- !u!114 &195690671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3829,14 +3845,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63d4c0bff925b4f5fb8d1abec0aed007, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ttext: {fileID: 728832442}
+  itext: {fileID: 559977952}
+  ptext: {fileID: 1310131026}
+  htext: {fileID: 1154506162}
   TestIm0: {fileID: 704146363}
   Im1: {fileID: 21300000, guid: 6c3f5a15b132b44d8a1e6b0cb4ba23d7, type: 3}
-  coin: {fileID: 0}
+  coin: {fileID: 133896862}
   dataController: {fileID: 1804656918}
   i: 0
   prices: 88130000803e0000409c0000a0860100
   buy: 0
   fix: {fileID: 728832442}
+  buyt: 0
+  buyi: 0
+  buyp: 0
+  buyh: 0
 --- !u!1 &728832440
 GameObject:
   m_ObjectHideFlags: 0
@@ -4083,14 +4107,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63d4c0bff925b4f5fb8d1abec0aed007, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ttext: {fileID: 728832442}
+  itext: {fileID: 559977952}
+  ptext: {fileID: 1310131026}
+  htext: {fileID: 1154506162}
   TestIm0: {fileID: 792236284}
   Im1: {fileID: 21300000, guid: 6c3f5a15b132b44d8a1e6b0cb4ba23d7, type: 3}
-  coin: {fileID: 0}
+  coin: {fileID: 1993394048}
   dataController: {fileID: 1804656918}
   i: 3
   prices: 88130000803e0000409c0000a0860100
   buy: 0
   fix: {fileID: 1154506162}
+  buyt: 0
+  buyi: 0
+  buyp: 0
+  buyh: 0
 --- !u!114 &792236287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4365,6 +4397,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63d4c0bff925b4f5fb8d1abec0aed007, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ttext: {fileID: 0}
+  itext: {fileID: 0}
+  ptext: {fileID: 0}
+  htext: {fileID: 0}
   TestIm0: {fileID: 835669490}
   Im1: {fileID: 21300000, guid: 6c3f5a15b132b44d8a1e6b0cb4ba23d7, type: 3}
   coin: {fileID: 0}
@@ -4373,6 +4409,10 @@ MonoBehaviour:
   prices: b0040000803e0000409c0000a0860100
   buy: 0
   fix: {fileID: 0}
+  buyt: 0
+  buyi: 0
+  buyp: 0
+  buyh: 0
 --- !u!114 &835669489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7210,7 +7250,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1369601408
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7640,14 +7680,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63d4c0bff925b4f5fb8d1abec0aed007, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ttext: {fileID: 728832442}
+  itext: {fileID: 559977952}
+  ptext: {fileID: 1310131026}
+  htext: {fileID: 1154506162}
   TestIm0: {fileID: 1464873401}
   Im1: {fileID: 21300000, guid: 6c3f5a15b132b44d8a1e6b0cb4ba23d7, type: 3}
-  coin: {fileID: 0}
+  coin: {fileID: 1612681979}
   dataController: {fileID: 1804656918}
   i: 2
   prices: 88130000803e0000409c0000a0860100
   buy: 0
   fix: {fileID: 1310131026}
+  buyt: 0
+  buyi: 0
+  buyp: 0
+  buyh: 0
 --- !u!114 &1464873404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7908,6 +7956,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63d4c0bff925b4f5fb8d1abec0aed007, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ttext: {fileID: 0}
+  itext: {fileID: 0}
+  ptext: {fileID: 0}
+  htext: {fileID: 0}
   TestIm0: {fileID: 1509847292}
   Im1: {fileID: 21300000, guid: 6c3f5a15b132b44d8a1e6b0cb4ba23d7, type: 3}
   coin: {fileID: 0}
@@ -7916,6 +7968,10 @@ MonoBehaviour:
   prices: b0040000803e0000409c0000a0860100
   buy: 0
   fix: {fileID: 0}
+  buyt: 0
+  buyi: 0
+  buyp: 0
+  buyh: 0
 --- !u!114 &1509847291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10186,7 +10242,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1952433324
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10846,6 +10902,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63d4c0bff925b4f5fb8d1abec0aed007, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ttext: {fileID: 0}
+  itext: {fileID: 0}
+  ptext: {fileID: 0}
+  htext: {fileID: 0}
   TestIm0: {fileID: 2067320901}
   Im1: {fileID: 21300000, guid: 6c3f5a15b132b44d8a1e6b0cb4ba23d7, type: 3}
   coin: {fileID: 0}
@@ -10854,6 +10914,10 @@ MonoBehaviour:
   prices: b0040000803e0000409c0000a0860100
   buy: 0
   fix: {fileID: 0}
+  buyt: 0
+  buyi: 0
+  buyp: 0
+  buyh: 0
 --- !u!114 &2067320900
 MonoBehaviour:
   m_ObjectHideFlags: 0

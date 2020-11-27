@@ -62,17 +62,17 @@ public class Data : MonoBehaviour
         PlayerPrefs.SetInt("buyh", buyh);
     }
     public int getbuyt(){
-        return getbuyt;
+        return buyt;
     }
 
      public int getbuyi(){
-        return getbuyi;
+        return buyi;
     }
      public int getbuyp(){
-        return getbuyp;
+        return buyp;
     }
      public int getbuyh(){
-        return getbuyh;
+        return buyh;
     }
 
     public void SetClickMoney(int newCM) {
@@ -105,7 +105,6 @@ public class Data : MonoBehaviour
         upgradeButton.currentCost = PlayerPrefs.GetInt("cost ",upgradeButton.startCurrentCost);
     }
     public void LoadAlba(Backgroud itemAlba){
-        itemAlba.Albalevel = PlayerPrefs.GetInt("AlbaLevel ",1);
         itemAlba.moneyForSec = PlayerPrefs.GetInt("moneyForSec ",2);
         itemAlba.alba1 = PlayerPrefs.GetInt("alba1 ",0);
         itemAlba.alba2 = PlayerPrefs.GetInt("alba2 ",0);
@@ -113,7 +112,6 @@ public class Data : MonoBehaviour
         itemAlba.alba4 = PlayerPrefs.GetInt("alba4 ",0);
     }
     public void SaveAlba(Backgroud itemAlba){
-        PlayerPrefs.SetInt("AlbaLevel ",itemAlba.Albalevel);
         PlayerPrefs.SetInt("moneyForSec ",itemAlba.moneyForSec);
         PlayerPrefs.SetInt("alba1 ",itemAlba.alba1);
         PlayerPrefs.SetInt("alba2 ",itemAlba.alba2);
@@ -121,5 +119,4 @@ public class Data : MonoBehaviour
         PlayerPrefs.SetInt("alba4 ",itemAlba.alba4);
 
     }
-    public void LoadStore()
 }
