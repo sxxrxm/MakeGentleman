@@ -8,19 +8,19 @@ public class Data : MonoBehaviour
     private int mClickMoney = 0;
     private int sinsaTime = 2;
     public PlayerPrefsX PlayerPrefsX;
-    private bool buyt = false;
-    private bool buyi = false;
-    private bool buyp = false;
-    private bool buyh = false;
+    private int buyt = 0;
+    private int buyi = 0;
+    private int buyp = 0;
+    private int buyh = 0;
 
     void Awake(){
         mMoney = PlayerPrefs.GetInt("Money");
         mClickMoney = PlayerPrefs.GetInt("MoneyPerClick",5);
         sinsaTime = PlayerPrefs.GetInt("time ",2);
-        buyt = PlayerPrefsX.GetBool("buyt");
-        buyi = PlayerPrefsX.GetBool("buyi");
-        buyp = PlayerPrefsX.GetBool("buyp");
-        buyh = PlayerPrefsX.GetBool("buyh");
+        buyt = PlayerPrefs.GetInt("buyt",0);
+        buyi = PlayerPrefs.GetInt("buyi",0);
+        buyp = PlayerPrefs.GetInt("buyp",0);
+        buyh = PlayerPrefs.GetInt("buyh",0);
 
     }
     public void SetMoney(int newM){
@@ -45,33 +45,33 @@ public class Data : MonoBehaviour
     }
 
     public void Setbuyt(){
-        buyt = true;
-        PlayerPrefsX.SetBool("buyt", buyt);
+        buyt = 1;
+        PlayerPrefs.SetInt("buyt", buyt);
     }
 
      public void Setbuyi(){
-        buyi = true;
-        PlayerPrefsX.SetBool("buyi", buyi);
+        buyi = 1;
+        PlayerPrefs.SetInt("buyi", buyi);
     }
      public void Setbuyp(){
-        buyp = true;
-        PlayerPrefsX.SetBool("buyp", buyp);
+        buyp = 1;
+        PlayerPrefs.SetInt("buyp", buyp);
     }
      public void Setbuyh(){
-        buyh = true;
-        PlayerPrefsX.SetBool("buyh", buyh);
+        buyh = 1;
+        PlayerPrefs.SetInt("buyh", buyh);
     }
-    public void getbuyt(){
+    public int getbuyt(){
         return getbuyt;
     }
 
-     public void getbuyi(){
+     public int getbuyi(){
         return getbuyi;
     }
-     public void getbuyp(){
+     public int getbuyp(){
         return getbuyp;
     }
-     public void getbuyh(){
+     public int getbuyh(){
         return getbuyh;
     }
 
@@ -121,4 +121,5 @@ public class Data : MonoBehaviour
         PlayerPrefs.SetInt("alba4 ",itemAlba.alba4);
 
     }
+    public void LoadStore()
 }

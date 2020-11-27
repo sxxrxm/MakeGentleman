@@ -13,6 +13,10 @@ public class ChangeImage : MonoBehaviour
     public int[] prices = {5000, 16000, 40000, 100000};
     public int buy = 0;
     public Text fix;
+    public int buyt = 0;
+    public int buyi = 0;
+    public int buyp = 0;
+    public int buyh = 0;
 
     
     // Start is called before the first frame update
@@ -30,6 +34,11 @@ public class ChangeImage : MonoBehaviour
                 buy = 1;
             }
         }
+        buyt = getbuyt();
+        buyi = getbuyi();
+        buyp = getbuyp();
+        buyh = getbuyh();
+
     }
     public void buyStore(){
         if(buy == 1){
