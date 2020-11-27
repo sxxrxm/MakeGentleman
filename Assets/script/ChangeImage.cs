@@ -43,11 +43,11 @@ public class ChangeImage : MonoBehaviour
             TestIm0.sprite = Im1;
             if(buyt==1){
                 ttext.text = "보유 중";
-            }else if(buyi==1){
+            }if(buyi==1){
                 itext.text = "보유 중";
-            }else if(buyp==1){
+            }if(buyp==1){
                 ptext.text = "보유 중";
-            }else if(buyh==1){
+            }if(buyh==1){
                 htext.text = "보유 중";
             } 
         }
