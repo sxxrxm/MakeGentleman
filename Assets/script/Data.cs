@@ -6,11 +6,12 @@ public class Data : MonoBehaviour
 {
     private int mMoney = 0;
     private int mClickMoney = 0;
-    private float sinsaTime = 2;
+    private int sinsaTime = 2;
 
     void Awake() {
         mMoney = PlayerPrefs.GetInt("Money");
         mClickMoney = PlayerPrefs.GetInt("MoneyPerClick",5);
+        sinsaTime = PlayerPrefs.GetInt("time ",2);
     }
     public void SetMoney(int newM){
         mMoney = newM;
@@ -43,6 +44,15 @@ public class Data : MonoBehaviour
     {
         return mClickMoney;
     }
+    
+    public int GetSinsaTime(){
+        return sinsaTime;
+    }
+    
+    public void SetSinsaTime(int newST){
+        sinsaTime = newST;
+        PlayerPrefs.SetInt("time ", sinsaTime);
+    }
     public void SaveUpgradeButton(Upgrade upgradeButton){
         PlayerPrefs.SetInt("level ",upgradeButton.level);
         PlayerPrefs.SetInt("time ",upgradeButton.sinsaTime);
@@ -50,8 +60,8 @@ public class Data : MonoBehaviour
     }
     public void LoadUpgradeButton(Upgrade upgradeButton){
         upgradeButton.level = PlayerPrefs.GetInt("level ",1);
-        upgradeButton.sinsaTime = PlayerPrefs.GetInt("time ",1);
+        upgradeButton.sinsaTime = PlayerPrefs.GetInt("time ",2);
+        sinsaTime = PlayerPrefs.GetInt("time ",2);
         upgradeButton.currentCost = PlayerPrefs.GetInt("cost ",upgradeButton.startCurrentCost);
     }
-
 }

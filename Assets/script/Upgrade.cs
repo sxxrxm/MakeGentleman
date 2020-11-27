@@ -17,7 +17,7 @@ public class Upgrade : MonoBehaviour
 
     [HideInInspector]
     public int level = 1;
-    public int sinsaTime = 1;
+    public int sinsaTime = 2;
 
     [HideInInspector]
     public int currentCost = 200; //현재 업그레이드 비용
