@@ -458,7 +458,7 @@ MonoBehaviour:
   dataController: {fileID: 1804656918}
   i: 0
   prices: b0040000803e0000409c0000a0860100
-  buy: 0
+  buy: 
 --- !u!114 &68705570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1341,7 +1341,7 @@ MonoBehaviour:
   dataController: {fileID: 1804656918}
   i: 1
   prices: 88130000983a0000409c0000a0860100
-  buy: 0
+  buy: 
 --- !u!114 &195690671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3745,7 +3745,7 @@ MonoBehaviour:
   dataController: {fileID: 1804656918}
   i: 0
   prices: 88130000803e0000409c0000a0860100
-  buy: 0
+  buy: 
 --- !u!1 &728832440
 GameObject:
   m_ObjectHideFlags: 0
@@ -3997,7 +3997,7 @@ MonoBehaviour:
   dataController: {fileID: 1804656918}
   i: 3
   prices: 88130000803e0000409c0000a0860100
-  buy: 0
+  buy: 
 --- !u!114 &792236287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4277,7 +4277,7 @@ MonoBehaviour:
   dataController: {fileID: 1804656918}
   i: 0
   prices: b0040000803e0000409c0000a0860100
-  buy: 0
+  buy: 
 --- !u!114 &835669489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7387,7 +7387,7 @@ MonoBehaviour:
   dataController: {fileID: 1804656918}
   i: 2
   prices: 88130000803e0000409c0000a0860100
-  buy: 0
+  buy: 
 --- !u!114 &1464873404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7653,7 +7653,7 @@ MonoBehaviour:
   dataController: {fileID: 1804656918}
   i: 0
   prices: b0040000803e0000409c0000a0860100
-  buy: 0
+  buy: 
 --- !u!114 &1509847291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7951,8 +7951,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: -16.514, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.6, y: -391.7}
-  m_SizeDelta: {x: 2446.3435, y: 268.88364}
+  m_AnchoredPosition: {x: 0.49337, y: -377.8}
+  m_SizeDelta: {x: 2448.5422, y: 241.99277}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1579276854
 MonoBehaviour:
@@ -10578,7 +10578,7 @@ MonoBehaviour:
   dataController: {fileID: 1804656918}
   i: 0
   prices: b0040000803e0000409c0000a0860100
-  buy: 0
+  buy: 
 --- !u!114 &2067320900
 MonoBehaviour:
   m_ObjectHideFlags: 0
