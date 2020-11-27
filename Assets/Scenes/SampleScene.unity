@@ -2246,7 +2246,6 @@ MonoBehaviour:
   dataController: {fileID: 1804656918}
   UpUp: {fileID: 0}
   slider: {fileID: 0}
-  LimitTime: 0
 --- !u!1 &698587185
 GameObject:
   m_ObjectHideFlags: 0
@@ -3349,7 +3348,6 @@ MonoBehaviour:
   dataController: {fileID: 0}
   UpUp: {fileID: 0}
   slider: {fileID: 156971858}
-  LimitTime: 2
 --- !u!114 &971658751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4371,7 +4369,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1369601408
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6358,7 +6356,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1952433324
 RectTransform:
   m_ObjectHideFlags: 0

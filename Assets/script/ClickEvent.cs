@@ -7,6 +7,7 @@ public class ClickEvent : MonoBehaviour
 {
     public Data dataController;
     public Upgrade UpUp;
+
     [SerializeField] public Slider slider;
   
     
@@ -21,7 +22,8 @@ public class ClickEvent : MonoBehaviour
         if(slider.value != 100)
         {
             slider.value += 2;
-      }
+        }else{
+
+        }
     }
-    
 }
