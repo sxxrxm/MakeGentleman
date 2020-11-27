@@ -65,6 +65,7 @@ public class Data : MonoBehaviour
         upgradeButton.currentCost = PlayerPrefs.GetInt("cost ",upgradeButton.startCurrentCost);
     }
     public void LoadAlba(Backgroud itemAlba){
+<<<<<<< HEAD
         itemAlba.Albalevel = PlayerPrefs.GetInt("AlbaLevel ",1);
         itemAlba.moneyForSec = PlayerPrefs.GetInt("moneyForSec ",2);
         // itemAlba.isPurchase = PlayerPrefs.GetInt("PurchaseBool ",0);
@@ -73,5 +74,15 @@ public class Data : MonoBehaviour
         PlayerPrefs.SetInt("AlbaLevel ",itemAlba.Albalevel);
         PlayerPrefs.SetInt("moneyForSec ",itemAlba.moneyForSec);
         // PlayerPrefs.SetInt("PurchaseBool ",itemAlba.isPurchase);
+=======
+        itemAlba.level = PlayerPrefs.GetInt("AlbaLevel ",1);
+        itemAlba.moneyForSec = PlayerPrefs.GetInt("moneyForSec ",2);
+        itemAlba.isPurchase = PlayerPrefs.GetInt("PurchaseBool ",0);
+    }
+    public void SaveAlba(Backgroud itemAlba){
+        PlayerPrefs.SetInt("AlbaLevel ",itemAlba.level);
+        PlayerPrefs.SetInt("moneyForSec ",itemAlba.moneyForSec);
+        PlayerPrefs.SetInt("PurchaseBool ",itemAlba.isPurchase);
+>>>>>>> f24903f... molla
     }
 }

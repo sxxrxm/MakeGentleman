@@ -27,6 +27,7 @@ public class ChangeImage : MonoBehaviour
         if(dataController.GetMoney()>=prices[i]){
             TestIm0.sprite = Im1;
             if(buy == 0){
+                ㅑ
                 buy = 1;
             }
         }
