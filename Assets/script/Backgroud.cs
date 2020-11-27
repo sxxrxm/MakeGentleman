@@ -12,7 +12,7 @@ public class Backgroud : MonoBehaviour
     public int Albalevel = 1;
     private int[] secMoneyArray = new int[5] { 0, 10, 20, 50, 100 };
     private int[] costArray = new int[5] { 0, 10000, 35000, 85000, 170000 };
-    private int isPurchase = 0;
+    public int isPurchase = 0;
 
 
     public Data dataController;
