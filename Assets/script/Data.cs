@@ -65,13 +65,13 @@ public class Data : MonoBehaviour
         upgradeButton.currentCost = PlayerPrefs.GetInt("cost ",upgradeButton.startCurrentCost);
     }
     public void LoadAlba(Backgroud itemAlba){
-        itemAlba.level = PlayerPrefs.GetInt("AlbaLevel ",1);
+        itemAlba.Albalevel = PlayerPrefs.GetInt("AlbaLevel ",1);
         itemAlba.moneyForSec = PlayerPrefs.GetInt("moneyForSec ",2);
-        itemAlba.isPurchase = PlayerPrefs.GetInt("PurchaseBool ",0);
+        // itemAlba.isPurchase = PlayerPrefs.GetInt("PurchaseBool ",0);
     }
     public void SaveAlba(Backgroud itemAlba){
-        PlayerPrefs.SetInt("AlbaLevel ",itemAlba.level);
+        PlayerPrefs.SetInt("AlbaLevel ",itemAlba.Albalevel);
         PlayerPrefs.SetInt("moneyForSec ",itemAlba.moneyForSec);
-        PlayerPrefs.SetInt("PurchaseBool ",itemAlba.isPurchase);
+        // PlayerPrefs.SetInt("PurchaseBool ",itemAlba.isPurchase);
     }
 }

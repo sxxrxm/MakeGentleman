@@ -5,11 +5,11 @@ using UnityEngine;
 public class Backgroud : MonoBehaviour
 {
 
-    public Text moneyForSecDisplayer; 
+    // public Text moneyForSecDisplayer; 
     [HideInInspector]
     public int moneyForSec;
     public int startMoneyForSec = 2;
-    public int level = 1;
+    public int Albalevel = 1;
     private int[] secMoneyArray = new int[5]{0,10,20,50,100};
     private int[] costArray = new int[5]{0,10000,35000,85000,170000};
     private int isPurchase = 0;
@@ -24,10 +24,10 @@ public class Backgroud : MonoBehaviour
     }
 
     void OnClickAlba(){
-        if(dataController.GetMoney>=costArray[level]){
+        if(dataController.GetMoney()>=costArray[Albalevel]){
             isPurchase = 1;
-            dataController.SubMoney(costArray[level]);
-            level++;
+            dataController.SubMoney(costArray[Albalevel]);
+            Albalevel++;
             updateUI();
             dataController.SaveAlba(this);
         }
@@ -45,7 +45,7 @@ public class Backgroud : MonoBehaviour
 
     public void updateUI() {
 
-        moneyForSecDisplayer.text = "초당 "+ secMoneyArray[level]+"코인";
+        //moneyForSecDisplayer.text = "초당 "+ secMoneyArray[Albalevel]+"코인";
 
     }
 }
