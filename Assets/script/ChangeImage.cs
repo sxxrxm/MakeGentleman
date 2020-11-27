@@ -18,7 +18,7 @@ public class ChangeImage : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        dataController.SetMoney(10000000);
+        
     }
 
     // Update is called once per frame
@@ -34,9 +34,17 @@ public class ChangeImage : MonoBehaviour
     public void buyStore(){
         if(buy == 1){
             dataController.SubMoney(prices[i]);
-            buy = 2;
             fix.GetComponent<Text>().text= "보유 중";
             Destroy(coin);
+            if(i == 0){
+                dataController.Setbuyt();
+            }else if(i == 1){
+                dataController.Setbuyi();
+            }else if(i == 2){
+                dataController.Setbuyp();
+            }else if(i == 3){
+                dataController.Setbuyh();
+            }
         }
     }
 }
