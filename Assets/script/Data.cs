@@ -64,14 +64,14 @@ public class Data : MonoBehaviour
         sinsaTime = PlayerPrefs.GetInt("time ",2);
         upgradeButton.currentCost = PlayerPrefs.GetInt("cost ",upgradeButton.startCurrentCost);
     }
-    public void LoadAlba(Backgroud itemAlba){
-        itemAlba.level = PlayerPrefs.GetInt("AlbaLevel ",1);
-        itemAlba.moneyForSec = PlayerPrefs.GetInt("moneyForSec ",2);
-        itemAlba.isPurchase = PlayerPrefs.GetInt("PurchaseBool ",0);
-    }
-    public void SaveAlba(Backgroud itemAlba){
-        PlayerPrefs.SetInt("AlbaLevel ",itemAlba.level);
-        PlayerPrefs.SetInt("moneyForSec ",itemAlba.moneyForSec);
-        PlayerPrefs.SetInt("PurchaseBool ",itemAlba.isPurchase);
-    }
+    // public void LoadAlba(Backgroud itemAlba){
+    //     itemAlba.level = PlayerPrefs.GetInt("AlbaLevel ",1);
+    //     itemAlba.moneyForSec = PlayerPrefs.GetInt("moneyForSec ",2);
+    //     itemAlba.isPurchase = PlayerPrefs.GetInt("PurchaseBool ",0);
+    // }
+    // public void SaveAlba(Backgroud itemAlba){
+    //     PlayerPrefs.SetInt("AlbaLevel ",itemAlba.level);
+    //     PlayerPrefs.SetInt("moneyForSec ",itemAlba.moneyForSec);
+    //     PlayerPrefs.SetInt("PurchaseBool ",itemAlba.isPurchase);
+    // }
 }

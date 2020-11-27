@@ -11,6 +11,7 @@ public class ChangeImage : MonoBehaviour
     public int i;
     public int[] prices = {5000, 16000, 40000, 100000};
     public int buy = 0;
+    public Text fix;
 
     
     // Start is called before the first frame update
@@ -33,6 +34,7 @@ public class ChangeImage : MonoBehaviour
         if(buy == 1){
             dataController.SubMoney(prices[i]);
             buy = 2;
+            fix.GetComponent<Text>().text= "보유 중";
         }
     }
 }
