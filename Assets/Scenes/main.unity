@@ -706,6 +706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sinsaPower: {fileID: 156971858}
+  dataController: {fileID: 0}
   maxPower: 100
   minusPower: 10
   sValue: 0
@@ -5404,7 +5405,7 @@ GameObject:
   - component: {fileID: 1198966612}
   - component: {fileID: 1198966611}
   m_Layer: 5
-  m_Name: deri
+  m_Name: honghonghong
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7215,7 +7216,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uB370\uB9AC\uC591"
+  m_Text: "\uD64D\uC591"
 --- !u!222 &1529729022
 CanvasRenderer:
   m_ObjectHideFlags: 0
