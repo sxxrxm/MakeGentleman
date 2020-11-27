@@ -574,6 +574,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blind: {fileID: 1596583313}
+  bg: {fileID: 68705571}
+  coin: {fileID: 928551512}
+  price: {fileID: 2106811828}
   moneyForSecDisplayer: {fileID: 164413192}
   moneyForSec: 0
   startMoneyForSec: 2
@@ -1604,6 +1607,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blind: {fileID: 1192240572}
+  bg: {fileID: 0}
+  coin: {fileID: 0}
+  price: {fileID: 0}
   moneyForSecDisplayer: {fileID: 164413192}
   moneyForSec: 0
   startMoneyForSec: 2
@@ -2022,7 +2028,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 73, y: 0.00000067234}
+  m_AnchoredPosition: {x: 73, y: 0}
   m_SizeDelta: {x: 191.56018, y: 51.488113}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &422383764
@@ -2057,7 +2063,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '?'
+  m_Text: 170,000
 --- !u!222 &422383765
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4380,6 +4386,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blind: {fileID: 1596583313}
+  bg: {fileID: 0}
+  coin: {fileID: 0}
+  price: {fileID: 0}
   moneyForSecDisplayer: {fileID: 164413192}
   moneyForSec: 0
   startMoneyForSec: 2
@@ -4562,6 +4571,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blind: {fileID: 1192240572}
+  bg: {fileID: 835669490}
+  coin: {fileID: 1333028254}
+  price: {fileID: 1063456253}
   moneyForSecDisplayer: {fileID: 164413192}
   moneyForSec: 0
   startMoneyForSec: 2
@@ -5797,7 +5809,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 70,000
+  m_Text: 35,000
 --- !u!222 &1063456254
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5953,7 +5965,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "1\uCD08\uB2F9 1000\uCF54\uC778"
+  m_Text: "1\uCD08\uB2F9 20\uCF54\uC778"
 --- !u!222 &1125203154
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6031,7 +6043,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "1\uCD08\uB2F9 ?\uCF54\uC778"
+  m_Text: "1\uCD08\uB2F9 50\uCF54\uC778"
 --- !u!222 &1149667592
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6134,7 +6146,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &1178801879
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6338,6 +6350,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blind: {fileID: 643613582}
+  bg: {fileID: 0}
+  coin: {fileID: 0}
+  price: {fileID: 0}
   moneyForSecDisplayer: {fileID: 164413192}
   moneyForSec: 0
   startMoneyForSec: 2
@@ -6700,7 +6715,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '?'
+  m_Text: 85,000
 --- !u!222 &1267666284
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7411,7 +7426,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "1\uCD08\uB2F9 400\uCF54\uC778"
+  m_Text: "1\uCD08\uB2F9 10\uCF54\uC778"
 --- !u!222 &1401949902
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8143,6 +8158,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blind: {fileID: 643613582}
+  bg: {fileID: 0}
+  coin: {fileID: 0}
+  price: {fileID: 0}
   moneyForSecDisplayer: {fileID: 164413192}
   moneyForSec: 0
   startMoneyForSec: 2
@@ -8243,6 +8261,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blind: {fileID: 948159908}
+  bg: {fileID: 0}
+  coin: {fileID: 0}
+  price: {fileID: 0}
   moneyForSecDisplayer: {fileID: 164413192}
   moneyForSec: 0
   startMoneyForSec: 2
@@ -8750,7 +8771,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "1\uCD08\uB2F9 ?\uCF54\uC778"
+  m_Text: "1\uCD08\uB2F9 100\uCF54\uC778"
 --- !u!222 &1641096927
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10330,7 +10351,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1952433324
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11111,6 +11132,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blind: {fileID: 948159908}
+  bg: {fileID: 2067320901}
+  coin: {fileID: 1723030487}
+  price: {fileID: 1267666283}
   moneyForSecDisplayer: {fileID: 164413192}
   moneyForSec: 0
   startMoneyForSec: 2
@@ -11265,7 +11289,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 200
+  m_Text: 10,000
 --- !u!222 &2106811829
 CanvasRenderer:
   m_ObjectHideFlags: 0

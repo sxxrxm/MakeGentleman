@@ -6,6 +6,9 @@ using UnityEngine.UI;
 public class Backgroud : MonoBehaviour
 {
     public Image blind;
+    public Image bg;
+    public Image coin;
+    public Text price;
     public Text moneyForSecDisplayer; 
 
     [HideInInspector]
@@ -37,6 +40,8 @@ public class Backgroud : MonoBehaviour
         if(dataController.getbuyh() == 1){
             Destroy(blind);
         }
+        
+
 
         StartCoroutine(AddMoneyLoop());
         updateUI();
@@ -47,6 +52,9 @@ public class Backgroud : MonoBehaviour
         if (dataController.GetMoney() >= costArray[1])
         {
             dataController.SubMoney(costArray[1]);
+            Destroy(bg);
+            Destroy(coin);
+            Destroy(price);
             alba1 = 1;
             updateUI();
             dataController.SaveAlba(this);
@@ -57,6 +65,9 @@ public class Backgroud : MonoBehaviour
         if (dataController.GetMoney() >= costArray[2])
         {
             dataController.SubMoney(costArray[2]);
+            Destroy(bg);
+            Destroy(coin);
+            Destroy(price);
             alba2 = 1;
             updateUI();
             dataController.SaveAlba(this);
@@ -67,6 +78,9 @@ public class Backgroud : MonoBehaviour
         if (dataController.GetMoney() >= costArray[3])
         {
             dataController.SubMoney(costArray[3]);
+            Destroy(bg);
+            Destroy(coin);
+            Destroy(price);
             alba3 = 1;
             updateUI();
             dataController.SaveAlba(this);
@@ -77,6 +91,9 @@ public class Backgroud : MonoBehaviour
         if (dataController.GetMoney() >= costArray[4])
         {
             dataController.SubMoney(costArray[4]);
+            Destroy(bg);
+            Destroy(coin);
+            Destroy(price);
             alba4 = 1;
             updateUI();
             dataController.SaveAlba(this);
@@ -87,19 +104,20 @@ public class Backgroud : MonoBehaviour
     {
         while (true)
         {
+            int sum = 0;
             if (alba1 == 1){
-                dataController.AddMoney(secMoneyArray[1]);
+                sum += secMoneyArray[1];
             }
             if (alba2 == 1){
-                dataController.AddMoney(secMoneyArray[2]);
+                sum += secMoneyArray[2];
             }
             if (alba3 == 1){
-                dataController.AddMoney(secMoneyArray[3]);
+                sum += secMoneyArray[3];
             }
             if (alba4 == 1){
-                dataController.AddMoney(secMoneyArray[4]);
+                sum += secMoneyArray[4];
             }
-
+            dataController.AddMoney(sum);
             yield return new WaitForSeconds(1.0f);
         }
     }
