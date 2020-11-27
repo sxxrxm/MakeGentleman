@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI; 
 
 public class Backgroud : MonoBehaviour
 {
-    
+    public Image blind;
+    public Text moneyForSecDisplayer; 
 
-    // public Text moneyForSecDisplayer; 
     [HideInInspector]
     public int moneyForSec;
     public int startMoneyForSec = 2;
@@ -23,42 +24,60 @@ public class Backgroud : MonoBehaviour
     void Start()
     {
         dataController.LoadAlba(this);
-        StartCoroutine("AddMoneyLoop");
+        
+        if(dataController.getbuyt() == 1){
+            Destroy(blind);
+        }
+        if(dataController.getbuyi() == 1){
+            Destroy(blind);
+        }
+        if(dataController.getbuyp() == 1){
+            Destroy(blind);
+        }
+        if(dataController.getbuyh() == 1){
+            Destroy(blind);
+        }
+
+        StartCoroutine(AddMoneyLoop());
         updateUI();
     }
 
-    void OnClickAlba1()
+    public void OnClickAlba1()
     {
         if (dataController.GetMoney() >= costArray[1])
         {
             dataController.SubMoney(costArray[1]);
+            alba1 = 1;
             updateUI();
             dataController.SaveAlba(this);
         }
     }
-    void OnClickAlba2()
+    public void OnClickAlba2()
     {
         if (dataController.GetMoney() >= costArray[2])
         {
             dataController.SubMoney(costArray[2]);
+            alba2 = 1;
             updateUI();
             dataController.SaveAlba(this);
         }
     }
-    void OnClickAlba3()
+    public void OnClickAlba3()
     {
         if (dataController.GetMoney() >= costArray[3])
         {
             dataController.SubMoney(costArray[3]);
+            alba3 = 1;
             updateUI();
             dataController.SaveAlba(this);
         }
     }
-    void OnClickAlba4()
+    public void OnClickAlba4()
     {
         if (dataController.GetMoney() >= costArray[4])
         {
             dataController.SubMoney(costArray[4]);
+            alba4 = 1;
             updateUI();
             dataController.SaveAlba(this);
         }
@@ -68,14 +87,16 @@ public class Backgroud : MonoBehaviour
     {
         while (true)
         {
-            if (alba1 == 1)
-            {
+            if (alba1 == 1){
                 dataController.AddMoney(secMoneyArray[1]);
-            } else if (alba2 == 1){
+            }
+            if (alba2 == 1){
                 dataController.AddMoney(secMoneyArray[2]);
-            } else if (alba3 == 1){
+            }
+            if (alba3 == 1){
                 dataController.AddMoney(secMoneyArray[3]);
-            } else if (alba4 == 1){
+            }
+            if (alba4 == 1){
                 dataController.AddMoney(secMoneyArray[4]);
             }
 
@@ -85,8 +106,21 @@ public class Backgroud : MonoBehaviour
 
     public void updateUI()
     {
+        int sum = 0;
+        if(dataController.getbuyt() == 1 && alba1 == 1){
+            sum += 10;
+        }
+        if(dataController.getbuyi() == 1 && alba2 == 1){
+             sum += 20;
+        }
+        if(dataController.getbuyp() == 1 && alba3 == 1){
+            sum += 50;
 
-        //moneyForSecDisplayer.text = "초당 "+ secMoneyArray[Albalevel]+"코인";
+        }
+        if(dataController.getbuyh() == 1 && alba4 == 1){
+            sum += 100;
+        }
+        moneyForSecDisplayer.text = "초당 "+ sum+"코인";
 
     }
 }

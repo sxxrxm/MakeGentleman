@@ -413,6 +413,7 @@ GameObject:
   - component: {fileID: 68705571}
   - component: {fileID: 68705570}
   - component: {fileID: 68705569}
+  - component: {fileID: 68705573}
   m_Layer: 5
   m_Name: bg_open
   m_TagString: Untagged
@@ -512,8 +513,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 68705569}
-        m_MethodName: 
+      - m_Target: {fileID: 68705573}
+        m_MethodName: OnClickAlba1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -522,28 +523,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 68705569}
-        m_MethodName: buyStore
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2128992944}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &68705571
 MonoBehaviour:
@@ -582,6 +561,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 68705567}
   m_CullTransparentMesh: 0
+--- !u!114 &68705573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68705567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f958536d2bd0284d838953beab1fbd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blind: {fileID: 1596583313}
+  moneyForSecDisplayer: {fileID: 164413192}
+  moneyForSec: 0
+  startMoneyForSec: 2
+  alba1: 0
+  alba2: 0
+  alba3: 0
+  alba4: 0
+  dataController: {fileID: 1804656918}
 --- !u!1 &72837331
 GameObject:
   m_ObjectHideFlags: 0
@@ -1523,6 +1523,7 @@ GameObject:
   - component: {fileID: 200174421}
   - component: {fileID: 200174423}
   - component: {fileID: 200174422}
+  - component: {fileID: 200174424}
   m_Layer: 5
   m_Name: julmi
   m_TagString: Untagged
@@ -1590,6 +1591,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 200174420}
   m_CullTransparentMesh: 0
+--- !u!114 &200174424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200174420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f958536d2bd0284d838953beab1fbd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blind: {fileID: 1192240572}
+  moneyForSecDisplayer: {fileID: 164413192}
+  moneyForSec: 0
+  startMoneyForSec: 2
+  alba1: 0
+  alba2: 0
+  alba3: 0
+  alba4: 0
+  dataController: {fileID: 1804656918}
 --- !u!1 &243224063
 GameObject:
   m_ObjectHideFlags: 0
@@ -4277,6 +4299,7 @@ GameObject:
   - component: {fileID: 835362317}
   - component: {fileID: 835362319}
   - component: {fileID: 835362318}
+  - component: {fileID: 835362320}
   m_Layer: 5
   m_Name: ttokbbok
   m_TagString: Untagged
@@ -4344,6 +4367,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 835362316}
   m_CullTransparentMesh: 0
+--- !u!114 &835362320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835362316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f958536d2bd0284d838953beab1fbd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blind: {fileID: 1596583313}
+  moneyForSecDisplayer: {fileID: 164413192}
+  moneyForSec: 0
+  startMoneyForSec: 2
+  alba1: 0
+  alba2: 0
+  alba3: 0
+  alba4: 0
+  dataController: {fileID: 1804656918}
 --- !u!1 &835669486
 GameObject:
   m_ObjectHideFlags: 0
@@ -4357,6 +4401,7 @@ GameObject:
   - component: {fileID: 835669490}
   - component: {fileID: 835669489}
   - component: {fileID: 835669488}
+  - component: {fileID: 835669492}
   m_Layer: 5
   m_Name: bg_open
   m_TagString: Untagged
@@ -4456,8 +4501,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 835669488}
-        m_MethodName: 
+      - m_Target: {fileID: 835669492}
+        m_MethodName: OnClickAlba2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4466,28 +4511,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 835669488}
-        m_MethodName: buyStore
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 92712793}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &835669490
 MonoBehaviour:
@@ -4526,6 +4549,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 835669486}
   m_CullTransparentMesh: 0
+--- !u!114 &835669492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835669486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f958536d2bd0284d838953beab1fbd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blind: {fileID: 1192240572}
+  moneyForSecDisplayer: {fileID: 164413192}
+  moneyForSec: 0
+  startMoneyForSec: 2
+  alba1: 0
+  alba2: 0
+  alba3: 0
+  alba4: 0
+  dataController: {fileID: 1804656918}
 --- !u!1 &839465676
 GameObject:
   m_ObjectHideFlags: 0
@@ -6090,7 +6134,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!222 &1178801879
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6213,6 +6257,7 @@ GameObject:
   - component: {fileID: 1198966610}
   - component: {fileID: 1198966612}
   - component: {fileID: 1198966611}
+  - component: {fileID: 1198966613}
   m_Layer: 5
   m_Name: honghonghong
   m_TagString: Untagged
@@ -6280,6 +6325,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1198966609}
   m_CullTransparentMesh: 0
+--- !u!114 &1198966613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198966609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f958536d2bd0284d838953beab1fbd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blind: {fileID: 643613582}
+  moneyForSecDisplayer: {fileID: 164413192}
+  moneyForSec: 0
+  startMoneyForSec: 2
+  alba1: 0
+  alba2: 0
+  alba3: 0
+  alba4: 0
+  dataController: {fileID: 1804656918}
 --- !u!1 &1252711242
 GameObject:
   m_ObjectHideFlags: 0
@@ -7250,7 +7316,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1369601408
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7916,6 +7982,7 @@ GameObject:
   - component: {fileID: 1509847292}
   - component: {fileID: 1509847291}
   - component: {fileID: 1509847290}
+  - component: {fileID: 1509847294}
   m_Layer: 5
   m_Name: bg_open
   m_TagString: Untagged
@@ -8015,31 +8082,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1509847290}
-        m_MethodName: 
+      - m_Target: {fileID: 1509847294}
+        m_MethodName: OnClickAlba4
         m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1509847290}
-        m_MethodName: buyStore
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1267871790}
-        m_MethodName: SetActive
-        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -8085,6 +8130,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1509847288}
   m_CullTransparentMesh: 0
+--- !u!114 &1509847294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509847288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f958536d2bd0284d838953beab1fbd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blind: {fileID: 643613582}
+  moneyForSecDisplayer: {fileID: 164413192}
+  moneyForSec: 0
+  startMoneyForSec: 2
+  alba1: 0
+  alba2: 0
+  alba3: 0
+  alba4: 0
+  dataController: {fileID: 1804656918}
 --- !u!1 &1510591622
 GameObject:
   m_ObjectHideFlags: 0
@@ -8096,6 +8162,7 @@ GameObject:
   - component: {fileID: 1510591623}
   - component: {fileID: 1510591625}
   - component: {fileID: 1510591624}
+  - component: {fileID: 1510591626}
   m_Layer: 5
   m_Name: daepa
   m_TagString: Untagged
@@ -8163,6 +8230,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1510591622}
   m_CullTransparentMesh: 0
+--- !u!114 &1510591626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510591622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f958536d2bd0284d838953beab1fbd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blind: {fileID: 948159908}
+  moneyForSecDisplayer: {fileID: 164413192}
+  moneyForSec: 0
+  startMoneyForSec: 2
+  alba1: 0
+  alba2: 0
+  alba3: 0
+  alba4: 0
+  dataController: {fileID: 1804656918}
 --- !u!1 &1529729019
 GameObject:
   m_ObjectHideFlags: 0
@@ -10862,6 +10950,7 @@ GameObject:
   - component: {fileID: 2067320901}
   - component: {fileID: 2067320900}
   - component: {fileID: 2067320899}
+  - component: {fileID: 2067320903}
   m_Layer: 5
   m_Name: bg_open
   m_TagString: Untagged
@@ -10961,8 +11050,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2067320899}
-        m_MethodName: 
+      - m_Target: {fileID: 2067320903}
+        m_MethodName: OnClickAlba3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10971,28 +11060,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2067320899}
-        m_MethodName: buyStore
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 839465676}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &2067320901
 MonoBehaviour:
@@ -11031,6 +11098,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2067320897}
   m_CullTransparentMesh: 0
+--- !u!114 &2067320903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067320897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f958536d2bd0284d838953beab1fbd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blind: {fileID: 948159908}
+  moneyForSecDisplayer: {fileID: 164413192}
+  moneyForSec: 0
+  startMoneyForSec: 2
+  alba1: 0
+  alba2: 0
+  alba3: 0
+  alba4: 0
+  dataController: {fileID: 1804656918}
 --- !u!1 &2071878815
 GameObject:
   m_ObjectHideFlags: 0
