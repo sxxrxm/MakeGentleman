@@ -11,22 +11,31 @@ public class SliderEvent : MonoBehaviour
     public float maxPower = 0.0f;
     public float minusPower = 0.0f;
     public float sValue = 0.0f;
+    public float fTime = 0.0f;
+    public float fLimitTime = 0.0f;
+    public int times = 0;
 
     void Start(){
         
     }
 
-    void sinsaTimes(){
+    void sinsaTimes(int fLimitTime){
         Debug.Log ("신사타임 시작!");
+        fTime += Time.deltaTime;
+        if(fTime >= fLimitTime)
+        {
+            sinsaPower.value = 0;
+            return;
+        }
     }
 
     void Update(){
         sinsaPower.value -= minusPower * Time.deltaTime;
         sValue = sinsaPower.value;
-
+        times = dataController.GetSinsaTime();
         if (sValue > 99.9)
         {
-            sinsaTimes();
+            sinsaTimes(times);
         }
     }
 }

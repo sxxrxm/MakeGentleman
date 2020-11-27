@@ -1038,8 +1038,11 @@ MonoBehaviour:
   sinsaPower: {fileID: 156971858}
   dataController: {fileID: 0}
   maxPower: 100
-  minusPower: 10
+  minusPower: 5
   sValue: 0
+  fTime: 0
+  fLimitTime: 0
+  times: 0
 --- !u!1 &164413190
 GameObject:
   m_ObjectHideFlags: 0
@@ -5867,7 +5870,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &1178801879
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6949,7 +6952,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1369601408
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9910,7 +9913,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1952433324
 RectTransform:
   m_ObjectHideFlags: 0
