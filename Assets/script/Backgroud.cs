@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class Backgroud : MonoBehaviour
 {
+    
 
     // public Text moneyForSecDisplayer; 
     [HideInInspector]
     public int moneyForSec;
     public int startMoneyForSec = 2;
-    public int Albalevel = 1;
+    public int alba1 = 0;
+    public int alba2 = 0;
+    public int alba3 = 0;
+    public int alba4 = 0;
     private int[] secMoneyArray = new int[5] { 0, 10, 20, 50, 100 };
     private int[] costArray = new int[5] { 0, 10000, 35000, 85000, 170000 };
-    public int isPurchase = 0;
 
 
     public Data dataController;
@@ -24,11 +27,40 @@ public class Backgroud : MonoBehaviour
         updateUI();
     }
 
-    void OnClickAlba()
+    void OnClickAlba1()
     {
         if (dataController.GetMoney() >= costArray[Albalevel])
         {
-            isPurchase = 1;
+            dataController.SubMoney(costArray[Albalevel]);
+            Albalevel++;
+            updateUI();
+            dataController.SaveAlba(this);
+        }
+    }
+    void OnClickAlba2()
+    {
+        if (dataController.GetMoney() >= costArray[Albalevel])
+        {
+            dataController.SubMoney(costArray[Albalevel]);
+            Albalevel++;
+            updateUI();
+            dataController.SaveAlba(this);
+        }
+    }
+    void OnClickAlba3()
+    {
+        if (dataController.GetMoney() >= costArray[Albalevel])
+        {
+            dataController.SubMoney(costArray[Albalevel]);
+            Albalevel++;
+            updateUI();
+            dataController.SaveAlba(this);
+        }
+    }
+    void OnClickAlba4()
+    {
+        if (dataController.GetMoney() >= costArray[Albalevel])
+        {
             dataController.SubMoney(costArray[Albalevel]);
             Albalevel++;
             updateUI();
@@ -40,7 +72,7 @@ public class Backgroud : MonoBehaviour
     {
         while (true)
         {
-            if (isPurchase == 1)
+            if ( == 1)
             {
                 dataController.AddMoney(moneyForSec);
 

@@ -67,11 +67,18 @@ public class Data : MonoBehaviour
     public void LoadAlba(Backgroud itemAlba){
         itemAlba.Albalevel = PlayerPrefs.GetInt("AlbaLevel ",1);
         itemAlba.moneyForSec = PlayerPrefs.GetInt("moneyForSec ",2);
-        itemAlba.isPurchase = PlayerPrefs.GetInt("PurchaseBool ",0);
+        itemAlba.alba1 = PlayerPrefs.GetInt("alba1 ",0);
+        itemAlba.alba2 = PlayerPrefs.GetInt("alba2 ",0);
+        itemAlba.alba3 = PlayerPrefs.GetInt("alba3 ",0);
+        itemAlba.alba4 = PlayerPrefs.GetInt("alba4 ",0);
     }
     public void SaveAlba(Backgroud itemAlba){
         PlayerPrefs.SetInt("AlbaLevel ",itemAlba.Albalevel);
         PlayerPrefs.SetInt("moneyForSec ",itemAlba.moneyForSec);
-        PlayerPrefs.SetInt("PurchaseBool ",itemAlba.isPurchase);
+        PlayerPrefs.SetInt("alba1 ",itemAlba.alba1);
+        PlayerPrefs.SetInt("alba2 ",itemAlba.alba2);
+        PlayerPrefs.SetInt("alba3 ",itemAlba.alba3);
+        PlayerPrefs.SetInt("alba4 ",itemAlba.alba4);
+
     }
 }
