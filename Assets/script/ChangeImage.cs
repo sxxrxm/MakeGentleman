@@ -9,12 +9,14 @@ public class ChangeImage : MonoBehaviour
     public Sprite Im1; //바뀌어질 이미지
     public Data dataController;
     public int i;
-    public int[] prices = {500, 16000, 40000, 100000};
+    public int[] prices = {5000, 16000, 40000, 100000};
+    public int buy = 0;
+
     
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
@@ -22,6 +24,15 @@ public class ChangeImage : MonoBehaviour
     {
         if(dataController.GetMoney()>=prices[i]){
             TestIm0.sprite = Im1;
+            if(buy == 0){
+                buy = 1;
+            }
+        }
+    }
+    public void buyStore(){
+        if(buy == 1){
+            dataController.SubMoney(prices[i]);
+            buy = 2;
         }
     }
 }
