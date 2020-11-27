@@ -14,10 +14,6 @@ public class PanelOpener : MonoBehaviour
     public Sprite Im5;
     public int count;
 
-    void OnMouseDownn(){
-        Debug.Log("버튼 눌림");
-    }
- 
     public void ChangeImage()
     {
         if(count == 0){
