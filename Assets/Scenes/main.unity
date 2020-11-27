@@ -455,10 +455,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TestIm0: {fileID: 68705571}
   Im1: {fileID: 21300000, guid: 6c3f5a15b132b44d8a1e6b0cb4ba23d7, type: 3}
+  coin: {fileID: 0}
   dataController: {fileID: 1804656918}
   i: 0
   prices: b0040000803e0000409c0000a0860100
   buy: 0
+  fix: {fileID: 0}
 --- !u!114 &68705570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1036,10 +1038,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sinsaPower: {fileID: 156971858}
-  dataController: {fileID: 0}
+  dataController: {fileID: 1804656918}
   maxPower: 100
-  minusPower: 10
+  minusPower: 5
   sValue: 0
+  fTime: 0
+  fLimitTime: 0
+  times: 0
 --- !u!1 &164413190
 GameObject:
   m_ObjectHideFlags: 0
@@ -1335,10 +1340,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TestIm0: {fileID: 195690668}
   Im1: {fileID: 21300000, guid: 6c3f5a15b132b44d8a1e6b0cb4ba23d7, type: 3}
+  coin: {fileID: 462475675}
   dataController: {fileID: 1804656918}
   i: 1
   prices: 88130000983a0000409c0000a0860100
   buy: 0
+  fix: {fileID: 559977952}
 --- !u!114 &195690671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2582,7 +2589,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 95.78007, y: 0.0000076294}
+  m_AnchoredPosition: {x: 43, y: 0.0000076294}
   m_SizeDelta: {x: 191.56018, y: 51.488113}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &559977952
@@ -2611,7 +2618,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 300
-    m_Alignment: 0
+    m_Alignment: 2
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -3739,10 +3746,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TestIm0: {fileID: 704146363}
   Im1: {fileID: 21300000, guid: 6c3f5a15b132b44d8a1e6b0cb4ba23d7, type: 3}
+  coin: {fileID: 133896862}
   dataController: {fileID: 1804656918}
   i: 0
   prices: 88130000803e0000409c0000a0860100
   buy: 0
+  fix: {fileID: 728832442}
 --- !u!1 &728832440
 GameObject:
   m_ObjectHideFlags: 0
@@ -3777,7 +3786,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 123, y: 0.0000076294}
+  m_AnchoredPosition: {x: 39, y: 0.0000076294}
   m_SizeDelta: {x: 191.56018, y: 51.488113}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &728832442
@@ -3806,7 +3815,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 300
-    m_Alignment: 0
+    m_Alignment: 2
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -3991,10 +4000,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TestIm0: {fileID: 792236284}
   Im1: {fileID: 21300000, guid: 6c3f5a15b132b44d8a1e6b0cb4ba23d7, type: 3}
+  coin: {fileID: 1993394048}
   dataController: {fileID: 1804656918}
   i: 3
   prices: 88130000803e0000409c0000a0860100
   buy: 0
+  fix: {fileID: 1154506162}
 --- !u!114 &792236287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4049,7 +4060,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 195690670}
+      - m_Target: {fileID: 792236286}
         m_MethodName: buyStore
         m_Mode: 1
         m_Arguments:
@@ -4271,10 +4282,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TestIm0: {fileID: 835669490}
   Im1: {fileID: 21300000, guid: 6c3f5a15b132b44d8a1e6b0cb4ba23d7, type: 3}
+  coin: {fileID: 0}
   dataController: {fileID: 1804656918}
   i: 0
   prices: b0040000803e0000409c0000a0860100
   buy: 0
+  fix: {fileID: 0}
 --- !u!114 &835669489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5807,7 +5820,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 72, y: 0.0000021942}
+  m_AnchoredPosition: {x: 47, y: 0.0000021942}
   m_SizeDelta: {x: 191.56018, y: 51.488113}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1154506162
@@ -5836,7 +5849,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 300
-    m_Alignment: 0
+    m_Alignment: 2
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -5867,7 +5880,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &1178801879
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6527,7 +6540,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 95.78, y: 0.0000076294}
+  m_AnchoredPosition: {x: 46, y: 0}
   m_SizeDelta: {x: 191.56018, y: 51.488113}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1310131026
@@ -6556,7 +6569,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 300
-    m_Alignment: 0
+    m_Alignment: 2
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -7381,10 +7394,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TestIm0: {fileID: 1464873401}
   Im1: {fileID: 21300000, guid: 6c3f5a15b132b44d8a1e6b0cb4ba23d7, type: 3}
+  coin: {fileID: 1612681979}
   dataController: {fileID: 1804656918}
   i: 2
   prices: 88130000803e0000409c0000a0860100
   buy: 0
+  fix: {fileID: 1310131026}
 --- !u!114 &1464873404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7439,7 +7454,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 195690670}
+      - m_Target: {fileID: 1464873403}
         m_MethodName: buyStore
         m_Mode: 1
         m_Arguments:
@@ -7647,10 +7662,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TestIm0: {fileID: 1509847292}
   Im1: {fileID: 21300000, guid: 6c3f5a15b132b44d8a1e6b0cb4ba23d7, type: 3}
+  coin: {fileID: 0}
   dataController: {fileID: 1804656918}
   i: 0
   prices: b0040000803e0000409c0000a0860100
   buy: 0
+  fix: {fileID: 0}
 --- !u!114 &1509847291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7948,8 +7965,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: -16.514, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.6, y: -391.7}
-  m_SizeDelta: {x: 2446.3435, y: 268.88364}
+  m_AnchoredPosition: {x: 0.49337, y: -377.8}
+  m_SizeDelta: {x: 2448.5422, y: 241.99277}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1579276854
 MonoBehaviour:
@@ -9910,7 +9927,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1952433324
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10572,10 +10589,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TestIm0: {fileID: 2067320901}
   Im1: {fileID: 21300000, guid: 6c3f5a15b132b44d8a1e6b0cb4ba23d7, type: 3}
+  coin: {fileID: 0}
   dataController: {fileID: 1804656918}
   i: 0
   prices: b0040000803e0000409c0000a0860100
   buy: 0
+  fix: {fileID: 0}
 --- !u!114 &2067320900
 MonoBehaviour:
   m_ObjectHideFlags: 0

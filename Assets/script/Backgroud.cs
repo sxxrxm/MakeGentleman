@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -38,14 +38,14 @@ public class Backgroud : MonoBehaviour
             if(isPurchase == 1){
                 dataController.AddMoney(moneyForSec);
         
-            }
-            yield return new WaitForSeconds(1.0f);
-        }
-    }
+//             }
+//             yield return new WaitForSeconds(1.0f);
+//         }
+//     }
 
-    public void updateUI() {
+//     public void updateUI() {
 
         //moneyForSecDisplayer.text = "초당 "+ secMoneyArray[Albalevel]+"코인";
 
-    }
-}
+//     }
+// }
