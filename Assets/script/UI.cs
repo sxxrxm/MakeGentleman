@@ -12,6 +12,5 @@ public class UI : MonoBehaviour
 
     void Update() {
         moneyDisplayer.text = Convert.ToString(dataController.GetMoney());
-        moneyClickDisplayer.text = "터치당 "+ dataController.GetClickMoney()+ "코인";
     }
 }
