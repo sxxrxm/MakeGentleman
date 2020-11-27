@@ -5,6 +5,11 @@ using UnityEngine.UI;
 
 public class ChangeImage : MonoBehaviour
 {
+    public Text ttext;
+    public Text itext;
+    public Text pttext;
+    public Text htext;
+
     public Image TestIm0; //기존에 존제하는 이미지
     public Sprite Im1; //바뀌어질 이미지
     public Image coin;
@@ -28,20 +33,27 @@ public class ChangeImage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(dataController.GetMoney()>=prices[i]){
-            TestIm0.sprite = Im1;
-            if(buy == 0){
-                buy = 1;
-            }
-        }
+        
         buyt = getbuyt();
         buyi = getbuyi();
         buyp = getbuyp();
         buyh = getbuyh();
-
+        
+        if(dataController.GetMoney()>=prices[i]){
+            TestIm0.sprite = Im1;
+            if(buyt==1){
+                ttext.text = "보유 중";
+            }else if(buyio==1){
+                itext.text = "보유 중";
+            }else if(buyp==1){
+                ptext.text = "보유 중";
+            }else if(buyh==1){
+                htext.text = "보유 중";
+            }
+        }
     }
     public void buyStore(){
-        if(buy == 1){
+        if(dataController.GetMoney()>=prices[i]){
             dataController.SubMoney(prices[i]);
             fix.GetComponent<Text>().text= "보유 중";
             Destroy(coin);

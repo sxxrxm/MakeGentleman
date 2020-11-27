@@ -29,9 +29,9 @@ public class Backgroud : MonoBehaviour
 
     void OnClickAlba1()
     {
-        if (dataController.GetMoney() >= costArray[Albalevel])
+        if (dataController.GetMoney() >= costArray[1])
         {
-            dataController.SubMoney(costArray[Albalevel]);
+            dataController.SubMoney(costArray[1]);
             Albalevel++;
             updateUI();
             dataController.SaveAlba(this);
@@ -39,9 +39,9 @@ public class Backgroud : MonoBehaviour
     }
     void OnClickAlba2()
     {
-        if (dataController.GetMoney() >= costArray[Albalevel])
+        if (dataController.GetMoney() >= costArray[2])
         {
-            dataController.SubMoney(costArray[Albalevel]);
+            dataController.SubMoney(costArray[2]);
             Albalevel++;
             updateUI();
             dataController.SaveAlba(this);
@@ -49,9 +49,9 @@ public class Backgroud : MonoBehaviour
     }
     void OnClickAlba3()
     {
-        if (dataController.GetMoney() >= costArray[Albalevel])
+        if (dataController.GetMoney() >= costArray[3])
         {
-            dataController.SubMoney(costArray[Albalevel]);
+            dataController.SubMoney(costArray[3]);
             Albalevel++;
             updateUI();
             dataController.SaveAlba(this);
@@ -59,9 +59,9 @@ public class Backgroud : MonoBehaviour
     }
     void OnClickAlba4()
     {
-        if (dataController.GetMoney() >= costArray[Albalevel])
+        if (dataController.GetMoney() >= costArray[4])
         {
-            dataController.SubMoney(costArray[Albalevel]);
+            dataController.SubMoney(costArray[4]);
             Albalevel++;
             updateUI();
             dataController.SaveAlba(this);
@@ -72,7 +72,7 @@ public class Backgroud : MonoBehaviour
     {
         while (true)
         {
-            if ( == 1)
+            if ()
             {
                 dataController.AddMoney(moneyForSec);
 
