@@ -7,11 +7,21 @@ public class Data : MonoBehaviour
     private int mMoney = 0;
     private int mClickMoney = 0;
     private int sinsaTime = 2;
+    public PlayerPrefsX PlayerPrefsX;
+    private bool buyt = false;
+    private bool buyi = false;
+    private bool buyp = false;
+    private bool buyh = false;
 
     void Awake(){
         mMoney = PlayerPrefs.GetInt("Money");
         mClickMoney = PlayerPrefs.GetInt("MoneyPerClick",5);
         sinsaTime = PlayerPrefs.GetInt("time ",2);
+        buyt = PlayerPrefsX.GetBool("buyt");
+        buyi = PlayerPrefsX.GetBool("buyi");
+        buyp = PlayerPrefsX.GetBool("buyp");
+        buyh = PlayerPrefsX.GetBool("buyh");
+
     }
     public void SetMoney(int newM){
         mMoney = newM;
@@ -34,6 +44,36 @@ public class Data : MonoBehaviour
         return mMoney;
     }
 
+    public void Setbuyt(){
+        buyt = true;
+        PlayerPrefsX.SetBool("buyt", buyt);
+    }
+
+     public void Setbuyi(){
+        buyi = true;
+        PlayerPrefsX.SetBool("buyi", buyi);
+    }
+     public void Setbuyp(){
+        buyp = true;
+        PlayerPrefsX.SetBool("buyp", buyp);
+    }
+     public void Setbuyh(){
+        buyh = true;
+        PlayerPrefsX.SetBool("buyh", buyh);
+    }
+    public void getbuyt(){
+        return getbuyt;
+    }
+
+     public void getbuyi(){
+        return getbuyi;
+    }
+     public void getbuyp(){
+        return getbuyp;
+    }
+     public void getbuyh(){
+        return getbuyh;
+    }
 
     public void SetClickMoney(int newCM) {
         mClickMoney = newCM;
