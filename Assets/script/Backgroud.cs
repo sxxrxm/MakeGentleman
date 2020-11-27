@@ -72,11 +72,20 @@ public class Backgroud : MonoBehaviour
     {
         while (true)
         {
-            if ()
+            if (alba1 == 1)
             {
-                dataController.AddMoney(moneyForSec);
+                dataController.AddMoney(secMoneyArray[1]);
 
+            } else if (alba2 == 1){
+                dataController.AddMoney(secMoneyArray[2]);
             }
+            } else if (alba3 == 1){
+                dataController.AddMoney(secMoneyArray[3]);
+            }
+            } else if (alba4 == 1){
+                dataController.AddMoney(secMoneyArray[4]);
+            }
+
             yield return new WaitForSeconds(1.0f);
         }
     }
