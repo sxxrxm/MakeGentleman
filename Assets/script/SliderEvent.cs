@@ -19,23 +19,19 @@ public class SliderEvent : MonoBehaviour
         
     }
 
-    void sinsaTimes(int fLimitTime){
-        Debug.Log ("신사타임 시작!");
-        fTime += Time.deltaTime;
-        if(fTime >= fLimitTime)
-        {
-            sinsaPower.value = 0;
-            return;
-        }
-    }
-
     void Update(){
         sinsaPower.value -= minusPower * Time.deltaTime;
         sValue = sinsaPower.value;
         times = dataController.GetSinsaTime();
         if (sValue > 99.9)
         {
-            sinsaTimes(times);
+            Debug.Log ("신사타임 시작!");
+            fTime += Time.deltaTime;
+            if(fTime >= fLimitTime)
+            {
+                sinsaPower.value = 100;
+                return;
+            }
         }
     }
 }
