@@ -12,7 +12,6 @@ public class Data : MonoBehaviour
         mMoney = PlayerPrefs.GetInt("Money");
         mClickMoney = PlayerPrefs.GetInt("MoneyPerClick",5);
         sinsaTime = PlayerPrefs.GetInt("time ",2);
-        PlayerPrefs.DeleteAll();
     }
     public void SetMoney(int newM){
         mMoney = newM;
