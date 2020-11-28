@@ -21,6 +21,7 @@ public class Tutorial : MonoBehaviour
             Debug.Log("튜토리얼을 시작한 경험이 있습니다.");
             SceneManager.LoadScene("main");
         }
+
     }
 
     // Update is called once per frame
